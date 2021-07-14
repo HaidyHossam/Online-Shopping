@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActvity">
+
+    <RelativeLayout
+        android:layout_width="378dp"
+        android:layout_height="692dp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ListView
+            android:id="@+id/productList"
+            android:layout_width="357dp"
+            android:layout_height="597dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="19dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="211dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/search_bg"
+            android:ems="10"
+            android:hint="Search Items"
+            android:imeOptions="actionSearch"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/cursor"
+            app:backgroundTint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/cameraSearch"
+            android:layout_width="40dp"
+            android:layout_height="53dp"
+            android:layout_alignBottom="@+id/toolbar2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="232dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginBottom="1dp"
+            android:background="@android:drawable/btn_default"
+            android:clickable="true"
+            android:src="@mipmap/camera_round" />
+
+        <ImageButton
+            android:id="@+id/voiceSearch"
+            android:layout_width="33dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@+id/toolbar2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="3dp"
+            android:background="@android:drawable/btn_default"
+            android:clickable="true"
+            android:src="@mipmap/voice_round" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="40dp"
+            android:clickable="true"
+            android:src="@drawable/cart_foreground"
+            app:backgroundTint="@color/cart_background"
+            app:maxImageSize="100dp"
+            app:useCompatPadding="true" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

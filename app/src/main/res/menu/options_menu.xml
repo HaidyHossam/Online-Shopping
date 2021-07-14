@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_24"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/categories"
+        android:icon="@drawable/cat_24"
+        android:title="Categories" />
+    <item
+        android:id="@+id/chartOption"
+        android:icon="@drawable/chart_24"
+        android:title="History/Month Chart" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/abc_vector_test"
+        android:title="Log Out" />
+</menu>
